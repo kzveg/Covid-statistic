@@ -5,7 +5,7 @@ import SearchCountry from './searchCountry';
 
 
 const App = () => {
-    const url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/SARS-CoV-2_%28CDC-23312%29.png/1200px-SARS-CoV-2_%28CDC-23312%29.png'
+    const url = 'https://thumbs.dreamstime.com/b/coronavirus-red-vector-icon-ncov-bacteria-isolated-white-background-covid-wuhan-corona-virus-disease-sign-sars-pandemic-concept-175658585.jpg'
 
     return (
        <div className="app">

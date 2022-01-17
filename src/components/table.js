@@ -31,35 +31,35 @@ const Table = ()=>{
     return(
         <div>
             <div>
-            <Statistic />
-            <Backdrop className={classes.backdrop} open={open} >
-               <div className="countryData">
-                 <div className="formInformation"  >
-                <div id="t1">
-                <h1>{countryItems.name}</h1> 
+              <Statistic />
+              <Backdrop className={classes.backdrop} open={open} >
+                <div className="countryData">
+                  <div className="formInformation"  >
+                      <div id="t1">
+                        <h1>{countryItems.name}</h1> 
+                      </div>
+                      <br />
+                      <div className="countryText">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTko_OsMVPkExZAvGVmDo9Xvb56o5e5cuvAhw&usqp=CAU' alt="born"></img>
+                        <h4>Total Confirmed </h4>
+                        <h4>{countryItems.total}</h4>
+                      </div>
+                      <br />
+                      <div className="countryText">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThODvSAAW2MBw_bC-tQqdhjPb3zk8yqtVcIMRaHhEz5J_LWao-AivagRaWEGzIhIfl5c0&usqp=CAU' alt="death"></img>
+                        <h4>Total Death </h4>
+                        <h4>{countryItems.deth}</h4>
+                      </div>
+                      <br />
+                      <div className="countryText">
+                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4iLspNLA6D0HHt7KZoMYjb0GezDG1Q9z9Yg&usqp=CAU' alt="recovered"></img>
+                        <h4>Total Recovered </h4>
+                        <h4>{countryItems.recovered}</h4>
+                      </div>
+                      <button onClick={closeBackdrop}> ok </button>
+                  </div>
                 </div>
-                <br />
-                <div className="countryText">
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTko_OsMVPkExZAvGVmDo9Xvb56o5e5cuvAhw&usqp=CAU' alt="born"></img>
-                <h4>Total Confirmed </h4>
-                <h4>{countryItems.total}</h4>
-                </div>
-                <br />
-                <div className="countryText">
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThODvSAAW2MBw_bC-tQqdhjPb3zk8yqtVcIMRaHhEz5J_LWao-AivagRaWEGzIhIfl5c0&usqp=CAU' alt="death"></img>
-                <h4>Total Death </h4>
-                <h4>{countryItems.deth}</h4>
-                </div>
-                <br />
-                <div className="countryText">
-                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4iLspNLA6D0HHt7KZoMYjb0GezDG1Q9z9Yg&usqp=CAU' alt="recovered"></img>
-                <h4>Total Recovered </h4>
-                <h4>{countryItems.recovered}</h4>
-                </div>
-                <button onClick={closeBackdrop}> ok </button>
-                 </div>
-               </div>
-            </Backdrop>
+              </Backdrop>
             </div>
         </div>
     )
